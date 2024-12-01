@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-
 export default function Square({
   value,
   onSquareClick,
@@ -9,26 +7,12 @@ export default function Square({
   value: string | null;
   onSquareClick: () => void;
 }) {
-  const squareRef = useRef<HTMLDivElement | null>(null);
-
-  useEffect(() => {
-    const adjustFontSize = () => {
-      if (squareRef.current) {
-        const width = squareRef.current.clientWidth;
-        squareRef.current.style.fontSize = `${width * 0.7}px`;
-      }
-    };
-
-    adjustFontSize();
-    window.addEventListener("resize", adjustFontSize);
-
-    return () => {
-      window.removeEventListener("resize", adjustFontSize);
-    };
-  }, []);
 
   return (
-    <div ref={squareRef} className="square" onClick={onSquareClick}>
+    <div
+      className="w-full aspect-square bg-default rounded-md shadow-sm shadow-black flex justify-center items-center cursor-pointer text-4xl sm:text-6xl "
+      onClick={onSquareClick}
+    >
       {value}
     </div>
   );

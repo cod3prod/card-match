@@ -1,3 +1,4 @@
+import { warn } from "console";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -9,8 +10,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "#ed669c",
+        secondary: "#fbfbfb",
+        default: "#aeabb9",
+        button: "#b0a192",
+        info: "#50597c",
+        success: "#7c9967",
+        warning: "#fa892f",
+        danger: "#f44336",
       },
     },
   },
