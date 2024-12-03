@@ -8,7 +8,7 @@ export default function GameInfo({ state }: { state: State }) {
   });
 
   return (
-    <section className="mt-4 p-4 w-full h-[30vh] bg-secondary rounded-md text-center overflow-auto">
+    <section className="mt-4 p-4 w-full h-[30vh] bg-secondary rounded-md text-center overflow-auto custom-scrollbar">
       <ClickCounter state={state} />
       <ul>{descriptionList}</ul>
     </section>
