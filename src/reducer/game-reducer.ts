@@ -12,7 +12,7 @@ export type State = {
   gameActive: boolean;
 };
 
-export const initaialState: State = {
+export const initialState: State = {
   squares: Array(16).fill(null),
   deck: [
     "👀",
