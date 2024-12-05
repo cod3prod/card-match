@@ -1,8 +1,8 @@
-import { State } from "@/reducer/game-reducer";
+import { GameState } from "@/types/game-reducer";
 import ClickCounter from "./click-couter";
 import DescriptionItem from "./description-item";
 
-export default function GameInfo({ state }: { state: State }) {
+export default function GameInfo({ state }: { state: GameState }) {
   const descriptionList = state.history.map((data, index) => {
     return <DescriptionItem key={index} value={data} />;
   });

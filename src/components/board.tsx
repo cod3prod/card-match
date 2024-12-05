@@ -4,17 +4,13 @@ import Square from "./square";
 export default function Board({
   squares,
   score,
-  onPlay,
-  onReset,
 }: {
   squares: (string | null)[];
   score: number;
-  onPlay: (index: number) => void;
-  onReset: () => void;
 }) {
   return (
     <section className="relative w-full p-4 rounded-md bg-secondary flex flex-col justify-center">
-      <ResetButton onReset={onReset} />
+      <ResetButton />
       <div className="mb-2 text-2xl text-center font-bold">
         {score <= 6
           ? `Pairs left: ${8 - score}`
@@ -28,7 +24,6 @@ export default function Board({
             key={index}
             index={index}
             value={square}
-            onSquareClick={onPlay}
           />
         ))}
       </div>

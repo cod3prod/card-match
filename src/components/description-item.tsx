@@ -9,5 +9,4 @@ const DescriptionItem = React.memo(({ value }: { value: string }) => {
 });
 
 DescriptionItem.displayName = "DescriptionItem";
-
 export default DescriptionItem;

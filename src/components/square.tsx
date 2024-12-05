@@ -1,20 +1,26 @@
 "use client";
 
-export default function Square({
+import useGame from "@/hooks/use-game";
+import React from "react";
+
+const Square = React.memo(function Square({
   index,
   value,
-  onSquareClick,
 }: {
   index: number;
   value: string | null;
-  onSquareClick: (index: number) => void;
 }) {
+  const { handlePlay } = useGame();
+
   return (
     <div
       className="w-full aspect-square bg-default rounded-md shadow-sm shadow-black flex justify-center items-center cursor-pointer text-4xl sm:text-6xl"
-      onClick={() => onSquareClick(index)}
+      onClick={() => handlePlay(index)}
     >
       {value}
     </div>
   );
-}
+});
+
+Square.displayName = "Square";
+export default Square;
