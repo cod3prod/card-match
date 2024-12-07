@@ -13,7 +13,7 @@ export default function Board({
       <ResetButton />
       <div className="mb-2 text-2xl text-center font-bold">
         {score <= 6
-          ? `Pairs left: ${8 - score}`
+          ? `PAIRS LEFT: ${8 - score}`
           : score === 7
           ? "Last One!!!!"
           : "You cleared it!"}
