@@ -8,7 +8,7 @@ export default function ResetButton() {
 
   return (
     <button
-      className="absolute rounded-full bg-button w-10 h-10 text-secondary top-2 right-2"
+      className="absolute rounded-full bg-button w-10 h-10 text-secondary top-2 right-2 flex justify-center items-center"
       onClick={handleReset}
     >
       <GrPowerReset className="text-2xl" />

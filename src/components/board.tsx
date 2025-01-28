@@ -9,7 +9,7 @@ export default function Board({
   score: number;
 }) {
   return (
-    <section className="relative w-full p-4 rounded-md bg-secondary flex flex-col justify-center">
+    <section className="p-4 relative w-full rounded-md bg-secondary flex flex-col justify-center">
       <ResetButton />
       <div className="mb-2 text-2xl text-center font-bold">
         {score <= 6

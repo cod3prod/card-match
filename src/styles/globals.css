@@ -1,28 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
-
 * {
-  margin: 0 auto;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
   background-color: #50597c;
-  font-family: "Noto Sans", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-}
-
-.bangers-regular {
-  font-family: "Bangers", serif;
-  font-weight: 400;
-  font-style: normal;
 }
 
 .custom-scrollbar {
