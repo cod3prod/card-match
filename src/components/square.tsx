@@ -14,7 +14,7 @@ const Square = React.memo(function Square({
 
   return (
     <div
-      className="w-full aspect-square bg-default rounded-md shadow-sm shadow-black flex justify-center items-center cursor-pointer text-4xl sm:text-6xl"
+      className="w-full aspect-square bg-default rounded-md shadow-xs shadow-black flex justify-center items-center cursor-pointer text-4xl sm:text-6xl"
       onClick={() => handlePlay(index)}
     >
       {value}
